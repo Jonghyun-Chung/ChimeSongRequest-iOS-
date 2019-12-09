@@ -5,7 +5,7 @@
 App Name: Chime Song Request
 
 App Tagline: short one-liner description of your app
-
+Request The Song that You Love!
 
 Link(s) to any other public GitHub repo(s) of your app. 
 Backend:https://github.com/franklindtx/Chime-Song-Request-Backend
