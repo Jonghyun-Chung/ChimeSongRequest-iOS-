@@ -8,12 +8,14 @@ App Tagline: short one-liner description of your app
 
 
 Link(s) to any other public GitHub repo(s) of your app. 
-iOS: https://github.com/Jonghyun-Chung/ChimeSongRequest-iOS-
 Backend:https://github.com/franklindtx/Chime-Song-Request-Backend
 Design: https://www.figma.com/file/rBVuNon8vdcHqt4ObMJBPc/chime-song-requester?node-id=1%3A3
 
 Some screenshots of your app (highlight important features)
-
+![image1](https://raw.githubusercontent.com/franklindtx/Chime-Song-Request-Backend/master/image1.png)
+![image2](https://raw.githubusercontent.com/franklindtx/Chime-Song-Request-Backend/master/image2.png)
+![image3](https://raw.githubusercontent.com/franklindtx/Chime-Song-Request-Backend/master/image3.png)
+![image4](https://raw.githubusercontent.com/franklindtx/Chime-Song-Request-Backend/master/image4.png)
 
 
 1. We have added a Log-in feature to the app in order to make users put their own song requests by using their names. However, the process is completely anonymous so even if the user logged in with their names, other users are not able to see who requested which songs.
@@ -38,7 +40,7 @@ The iOS part of this app satisfies all the requirements for this project.
 
 3. We used many UINavigationControllers to navigate between each screen. For instance, we used NavigationControllers to move between the main screen and the “Request a Song” screen and “Requested Songs” screen. 
 
-
+![image5](https://raw.githubusercontent.com/franklindtx/Chime-Song-Request-Backend/master/image5.png)
 4. We definitely integrated our app with its API. After a user logs in to the app by using the log-in feature of the app on the very first screen (by entering his/her name and tapping the “Sign In” button,) the app automatically creates a new user object and saves it in the server with his/her name as shown above. Also, when the user inputs the details of the song that he/she wants to be played in “Request a Song” screen, the app automatically creates a song object and saves it in the User object that the user has previously created.
 
 The backend satisfies the API and database modeling requirement by creating a user-song (one to many) relationship, and multiple routes to create users, get users, create songs, get songs, vote for a song, delete a song, etc. It satisfies the deployment requirement by creating an external IP 35.190.159.80. 
