@@ -1,22 +1,10 @@
 # ChimeSongRequest-iOS-
 
-
-
-App Name: Chime Song Request
-
-App Tagline: short one-liner description of your app
-Request The Song that You Love!
+Chime Song Request: Request The Song that You Love!
 
 Link(s) to any other public GitHub repo(s) of your app. 
 Backend:https://github.com/franklindtx/Chime-Song-Request-Backend
 Design: https://www.figma.com/file/rBVuNon8vdcHqt4ObMJBPc/chime-song-requester?node-id=1%3A3
-
-Some screenshots of your app (highlight important features)
-![image1](https://raw.githubusercontent.com/franklindtx/Chime-Song-Request-Backend/master/image1.png)
-![image2](https://raw.githubusercontent.com/franklindtx/Chime-Song-Request-Backend/master/image2.png)
-![image3](https://raw.githubusercontent.com/franklindtx/Chime-Song-Request-Backend/master/image3.png)
-![image4](https://raw.githubusercontent.com/franklindtx/Chime-Song-Request-Backend/master/image4.png)
-
 
 1. We have added a Log-in feature to the app in order to make users put their own song requests by using their names. However, the process is completely anonymous so even if the user logged in with their names, other users are not able to see who requested which songs.
 
@@ -31,8 +19,6 @@ It is well known that Cornell students can request songs that they want Chimemas
 
 Students are limited to requesting only one song per a day that they must request a week beforehand and three songs to be played per day: one for the song that gets the most votes from other students and two based on the selection of Chimemasters after reading song requests with their reasons why they want that song.
 
-A list of how your app addresses each of the requirements (iOS / Backend)
-The iOS part of this app satisfies all the requirements for this project. 
 
 1. We implemented AutoLayout by using NSLayoutConstraint in every screen of the app in accordance with the design that our designer has done. 
 
