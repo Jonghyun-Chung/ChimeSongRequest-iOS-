@@ -7,10 +7,6 @@
 //
 
 import UIKit
-//UITableViewDataSource
-//protocol SaveInfoButtonTextDelegate: class {
-//    func saveInfoButtonText(to newString: String)
-//}
 
 class ViewController: UIViewController {
     

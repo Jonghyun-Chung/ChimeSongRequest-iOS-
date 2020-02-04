@@ -13,7 +13,6 @@ class LogInViewController: UIViewController {
     var descriptionTextView1: UITextView!
     var textField1: UITextView!
     let swiftColor = UIColor(red: 1, green: 1, blue: 0.4, alpha: 1)
-//    let userDefaults = UserDefaults.standard
 
     override func viewDidLoad() {
         super.viewDidLoad()

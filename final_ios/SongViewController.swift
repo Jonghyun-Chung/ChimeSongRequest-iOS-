@@ -8,7 +8,6 @@
 
 import UIKit
 
-//, UISearchResultsUpdating
 class SongViewController: UIViewController {
     
     var tableView = UITableView()
@@ -24,10 +23,7 @@ class SongViewController: UIViewController {
         
         title = "Request Details"
         view.backgroundColor = .white
-//        assignbackground()
-    
-//        self.tableView.backgroundColor = swiftColor
-//        self.tableView.delegate = self
+
         
         let fireworks = Song(songName: "Fireworks", songReason: "my birthday", songDetails: "remastered version from album ooo", likeSong: false, songUpvote: 5)
         let fakelove = Song(songName: "Fake Love", songReason: "my friend loves bts", songDetails: "ooo version", likeSong: false, songUpvote: 3)
@@ -45,7 +41,6 @@ class SongViewController: UIViewController {
         tableView.rowHeight = UITableView.automaticDimension
 
         searchController = UISearchController(searchResultsController: nil)
-//        searchController.searchResultsUpdater = self
 
         searchController.dimsBackgroundDuringPresentation = false
 
@@ -99,19 +94,7 @@ extension SongViewController: UITableViewDataSource {
         return cell
     }
     
-//    func updateSearchResults(for searchController: UISearchController) {
-//        if let searchText = searchController.searchBar.text {
-//            if !searchText.isEmpty {
-//                switch searchBy {
-//                case .songName:
-//                    NetworkManager.getSong(fromSongName: searchText) { songs in
-//                        self.songs = songs
-//                        self.tableView.reloadData()
-//                    }
-//}
-//            }
-//        }
-//    }
+
     func favoriteButtonTapped(row: Int) {
         let song = songs[row]
         
