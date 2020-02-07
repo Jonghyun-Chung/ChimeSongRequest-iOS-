@@ -13,11 +13,25 @@ class LogInViewController: UIViewController {
     var descriptionTextView1: UITextView!
     var textField1: UITextView!
     let swiftColor = UIColor(red: 1, green: 1, blue: 0.4, alpha: 1)
+    
+    private let titleLabel: UILabel = {
+        let label = UILabel()
+        label.text = "Chime Song Request"
+        label.font = UIFont(name: "Avenir-Light", size: 40)
+        label.textColor = UIColor(white: 1, alpha: 0.9)
+        return label
+    }()
 
     override func viewDidLoad() {
         super.viewDidLoad()
         title = "Log In"
+        
         assignbackground()
+        
+        view.addSubview(titleLabel)
+        titleLabel.translatesAutoresizingMaskIntoConstraints = false
+        titleLabel.centerXAnchor.constraint(equalTo: view.centerXAnchor).isActive = true
+        titleLabel.topAnchor.constraint(equalTo: view.safeAreaLayoutGuide.topAnchor, constant: 10).isActive = true
         
         descriptionTextView1 = UITextView()
         descriptionTextView1.translatesAutoresizingMaskIntoConstraints = false
@@ -82,18 +96,17 @@ class LogInViewController: UIViewController {
     }
     @objc func pushNavViewController() {
         let viewController0 = ViewController()
-//        let viewController1 = RequestViewController()
-//        let viewController2 = NetworkManager()
+
         if let username = textField1.text {
-//            let user = User(userName: username, songs: [])
             NetworkManager.createUser(fromUserName: username){ user in
                 self.textField1.text = user.name
             }
-//            viewController1.userName = username
             viewController0.userName = username
-//            userDefaults.set(user, forKey: "Username")
             navigationController?.pushViewController(viewController0, animated: true)
         }
+    }
+    override var preferredStatusBarStyle: UIStatusBarStyle {
+        return .lightContent
     }
     
     func assignbackground(){
